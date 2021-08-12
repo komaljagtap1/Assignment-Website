@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>Page Title</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+   
+</head>
+<body>
+    <div>
+        <a class="btn btn-link" href="E-VISA.html">HOME PAGE</a>
+      </div>
+
+      <form method="post" id="form1">
+      
+        <div id="div1">     
+        </div>
+        </form>
+
+      <br><br>
+      <input type="button" onclick="Printdiv('div1')" value="E-Visa Application Form" style="background-color: cadetblue;">
+      <script>
+        function Printdiv(form1) {
+              var printdata = document.getElementById(form1);
+              newwin = window.open("");
+              newwin.document.write(printdata.outerHTML);
+              newwin.print();
+              newwin.close();
+          } 
+      </script>
+      
+</body>
+</html>
